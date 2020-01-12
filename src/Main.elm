@@ -129,13 +129,6 @@ update msg model =
             ( model, Cmd.none )
 
 
-jumpToBottom : String -> Cmd Msg
-jumpToBottom id =
-    Dom.getViewportOf id
-        |> Task.andThen (\info -> Dom.setViewportOf id 0 info.scene.height)
-        |> Task.attempt (\_ -> NoOp)
-
-
 followUp : Model -> Float -> Cmd Msg
 followUp m tH =
     let
