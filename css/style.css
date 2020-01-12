@@ -1,0 +1,153 @@
+/* div {
+    border: solid thin;
+    box-sizing:border-box;
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    font-size: 2rem;
+}
+
+#container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DDF0E4;
+    border-bottom: #CEE2D9 solid 1px;
+}
+
+#body {
+    width : inherit;
+    flex-grow: 1;
+    display: flex;
+}
+
+#lSideBar {
+    width : 64px;
+    height: inherit;
+    background-color: #DDF0E4;
+}
+
+#mainContainer {
+    flex-grow: 1;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainHeader {
+    width : inherit;
+    height: 48px;
+    display: flex;
+    background-color: #DDF0E4;
+}
+
+#rSideBar {
+    width : 64px;
+    height: inherit;
+    background-color: #DDF0E4;
+}
+
+#mainBody {
+    width : inherit;
+    background-color: #DDF0E4;
+    background-position-x: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#taskHeader {
+    width : inherit;
+    height: 56px;
+    background-color: #FCFEFC;
+    display :flex;
+}
+
+#taskHeader div {
+    display :flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taskHeader .scroll {
+    background-color: #DDF0E4;
+}
+
+#tasks {
+    width : inherit;
+    height: 0;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.task {
+    width : inherit;
+    height: 40px;
+    display :flex;
+    border-bottom: #DDE5E5 solid 1px;
+    background-color: #EEF4F2;
+}
+
+.focused .indicator {
+    background-color: #769BA9;
+}
+
+.task div {
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#mainBody .indicator {
+    width : 3px;
+    height: inherit;
+}
+
+#mainBody .bar {
+    flex-grow: 1;
+    height: inherit;
+}
+
+#mainBody .scroll {
+    width : 16px;
+    height: inherit;
+}
+
+#footer {
+    width : inherit;
+    height: 8px;
+    background-color: #DDF0E4;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 16px;
+}
+
+#tasks::-webkit-scrollbar-track {
+    background: #DDF0E4;
+}
