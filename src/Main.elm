@@ -1,14 +1,11 @@
 module Main exposing (main)
 
-import Array exposing (fromList, get, set, toList)
 import Browser
-import Browser.Dom as Dom exposing (blur, focus, getViewportOf, setViewportOf)
-import Browser.Events exposing (onKeyDown, onKeyPress, onKeyUp)
-import Html exposing (Html, a, div, text, textarea)
-import Html.Attributes exposing (class, classList, href, id, placeholder, value)
-import Html.Events exposing (onBlur, onClick, onFocus, onInput)
-import Json.Decode as Decode exposing (Decoder, bool, float, int, list, nullable, string)
-import Maybe
+import Browser.Dom as Dom exposing (blur, getViewportOf, setViewportOf)
+import Browser.Events exposing (onKeyPress)
+import Html exposing (Html, div, text)
+import Html.Attributes exposing (class, classList, id)
+import Json.Decode as Decode exposing (string)
 import Task
 
 
